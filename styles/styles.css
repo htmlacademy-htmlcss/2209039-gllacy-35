@@ -228,6 +228,7 @@ body {
   background-color: #fcfcfc;
   border-radius: 4px;
   padding: 8px 0;
+  z-index: 1;
 }
 
 .header-catalog-title {
@@ -370,6 +371,7 @@ body {
   top: 40px;
   right: 13px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .header-search-close-button:hover,
@@ -500,6 +502,7 @@ body {
   width: 441px;
   top: 40px;
   right: 0;
+  z-index: 2;
 }
 
 .basket-empty {
@@ -614,6 +617,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 }
 
 .basket-total-price {
@@ -636,6 +640,7 @@ body {
   padding: 48px;
   padding-bottom: 52px;
   background-color: #fcfcfc;
+  z-index: 2;
 }
 
 .header-modal-form {
@@ -727,19 +732,98 @@ body {
 }
 
 .product-slider {
+  position: relative;
   width: 1170px;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
 .slider-wrapper {
+  box-sizing: border-box;
   width: 100%;
   display: flex;
+  margin-top: 24px;
+  padding-left: 70px;
+}
+
+.slider-wrapper-hidden {
+  display: none;
+}
+
+.slider-switch-button {
+  position: absolute;
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  outline: 2px solid #fcfcfc;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+  border: none;
+  top: 258px;
+  left: 542px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.slider-switch-button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-switch-button:hover {
+  background-color: #fcfcfc;
+}
+
+.slider-switch-button:hover svg path,
+.slider-switch-button:active svg path,
+.slider-switch-button:focus-visible svg path {
+  fill: #2d3440;
+}
+
+.slider-switch-button:active {
+  outline-color: rgba(252, 252, 252, 0.3);
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.slider-switch-button:focus-visible {
+  outline-color: #2d3440;
+}
+
+.slider-switch-button:disabled {
+  opacity: 0.3;
+}
+
+.slider-next-button {
+  transform: rotate(180deg);
+  left: 854px;
+}
+
+.ice-cream-name {
+  margin: 0;
+  margin-top: 136px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.ice-cream-description {
+  margin: 0;
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  max-width: 429px;
+}
+
+.slider-order-button {
+  margin-top: 48px;
 }
 
 .ice-cream-images {
   display: flex;
   align-items: center;
+  gap: 75px;
 }
 
 .slider-description-wrapper {
@@ -780,8 +864,9 @@ body {
   content: "";
   position: absolute;
   background-color: #fcfcfc;
-  width: 12px;
-  height: 12px;
+  outline: 1px solid #fcfcfc;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -792,6 +877,24 @@ body {
   opacity: 1;
 }
 
+.slider-pagination-button:hover .slider-pagination-button::before {
+  opacity: 1;
+  background-color: rgba(252, 252, 252, 0.3);
+}
+
+.slider-pagination-button:active .slider-pagination-button::before {
+  opacity: 0.5;
+}
+
+.slider-pagination-button:focus-visible .slider-pagination-button::before {
+  outline-color: #2d3440;
+}
+
+.slider-pagination-button:focus {
+  outline: none;
+  border: none;
+}
+
 .slider-social-list {
   list-style: none;
   padding: 0;
@@ -800,6 +903,63 @@ body {
   margin-top: auto;
   margin-left: auto;
   margin-bottom: 0;
+}
+
+.slider-social-link {
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: block;
+  outline: 2px solid rgba(252, 252, 252, 0.3);
+  border-radius: 50%;
+}
+
+.slider-social-link:hover {
+  background-color: #2d3440;
+}
+
+.slider-social-link:active {
+  background-color: #2d3440;
+  opacity: 0.5;
+}
+
+.slider-social-link:focus-visible {
+  background-color: #2d3440;
+  outline-color: #2d3440;
+  border: none;
+}
+
+.slider-main-image {
+  position: relative;
+  margin-right: 4px;
+}
+
+.slider-main-image::before {
+  content: "";
+  position: absolute;
+  width: 312px;
+  height: 312px;
+  border-radius: 50%;
+  background-color: #ffcbd8;
+  z-index: -1;
+  top: 100px;
+}
+
+.slider-image {
+  position: relative;
+}
+
+.slider-image::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffcbd8;
+  opacity: 0.4;
+  z-index: -1;
+  top: 25px;
+  right: -17px;
 }
 
 .visually-hidden {
