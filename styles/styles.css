@@ -760,7 +760,7 @@ body {
   border-radius: 50%;
   border: none;
   top: 258px;
-  left: 542px;
+  left: 543px;
   cursor: pointer;
   z-index: 1;
 }
@@ -797,12 +797,12 @@ body {
 
 .slider-next-button {
   transform: rotate(180deg);
-  left: 854px;
+  left: 855px;
 }
 
 .ice-cream-name {
   margin: 0;
-  margin-top: 136px;
+  margin-top: 133px;
   font-weight: 900;
   font-size: 36px;
   line-height: 46px;
@@ -824,10 +824,11 @@ body {
   display: flex;
   align-items: center;
   gap: 75px;
+  padding-top: 17px;
 }
 
 .slider-description-wrapper {
-  width: 50%;
+  width: 491px;
 }
 
 .slider-bottom-wrapper {
@@ -839,6 +840,7 @@ body {
 .slider-pagination {
   position: absolute;
   display: flex;
+  gap: 4px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -850,6 +852,7 @@ body {
   position: relative;
   box-sizing: border-box;
   margin: 0;
+  margin-left: -4px;
   padding: 0;
   background-color: transparent;
   width: 20px;
@@ -877,16 +880,16 @@ body {
   opacity: 1;
 }
 
-.slider-pagination-button:hover .slider-pagination-button::before {
+.slider-pagination-button:hover::before {
   opacity: 1;
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-.slider-pagination-button:active .slider-pagination-button::before {
+.slider-pagination-button:active::before {
   opacity: 0.5;
 }
 
-.slider-pagination-button:focus-visible .slider-pagination-button::before {
+.slider-pagination-button:focus-visible::before {
   outline-color: #2d3440;
 }
 
@@ -947,6 +950,7 @@ body {
 
 .slider-image {
   position: relative;
+  padding-top: 10px;
 }
 
 .slider-image::before {
@@ -958,8 +962,67 @@ body {
   background-color: #ffcbd8;
   opacity: 0.4;
   z-index: -1;
-  top: 25px;
+  top: 35px;
   right: -17px;
+}
+
+.gifts-section {
+  margin: 0 auto;
+  width: 1170px;
+}
+
+.gifts-section-title,
+.index-catalog-section-title {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 434px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.gifts-section-wrapper {
+  margin: 0 auto;
+  margin-top: 55px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 570px 570px;
+}
+
+.gifts-section-card {
+  background-color: #ff7799;
+  border-radius: 16px;
+  padding: 36px;
+  padding-right: 0;
+}
+
+.gifts-section-card-raspberry {
+  background-image: url(../images/index/raspberry-gift.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.gifts-section-card-marshmallow {
+  background-image: url(../images/index/marshmallow-gift.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.gifts-card-name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.gifts-card-text {
+  margin: 28px 0;
+  max-width: 328px;
+}
+
+.index-catalog-section {
+  margin: 0 auto;
+  width: 1170px;
 }
 
 .visually-hidden {
