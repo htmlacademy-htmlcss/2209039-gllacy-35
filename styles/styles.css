@@ -624,6 +624,8 @@ body {
   cursor: pointer;
   border: none;
   margin-right: -10px;
+  background-image: url("../images/index/basket-close-button.svg");
+  background-repeat: no-repeat;
 }
 
 .tooltip-delete-button:hover,
@@ -1148,9 +1150,22 @@ body {
 }
 
 .index-catalog-icecream-name {
+  color: var(--main-color);
+  text-decoration: none;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.index-catalog-icecream-name:hover,
+.index-catalog-icecream-name:focus-visible {
+  opacity: 0.4;
+  border: none;
+  outline: none;
+}
+
+.index-catalog-icecream-name:active {
+  opacity: 0.8;
 }
 
 .index-catalog-icecream-description {
@@ -1982,6 +1997,11 @@ body {
   outline: 2px solid #2d3440;
   background-color: var(--main-color);
   transition-duration: 0.3s;
+}
+
+.range-toggle:active {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
 }
 
 .toggle-max {
