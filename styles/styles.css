@@ -45,6 +45,7 @@ body {
 }
 
 .button {
+  font-family: "Inter", sans-serif;
   display: flex;
   box-sizing: border-box;
   align-items: center;
@@ -155,14 +156,17 @@ body {
 
 .pink-body {
   background-color: #feafc3;
+  max-width: 1366px;
 }
 
 .blue-body {
   background-color: #69a9ff;
+  max-width: 1366px;
 }
 
 .yellow-body {
   background-color: #fcc850;
+  max-width: 1366px;
 }
 
 .header-wrapper {
@@ -487,7 +491,7 @@ body {
   opacity: 0.6;
 }
 
-.header-search-button-wrapper:focus-within .user-navigation-link svg path,
+.header-search-button-wrapper:focus-within .user-navigation-link path,
 .header-search-button-wrapper:focus-within .header-navigation-link,
 .header-search-button-wrapper:focus-within .user-navigation-link {
   fill: #fcfcfc;
@@ -501,17 +505,17 @@ body {
   opacity: 0.3;
 }
 
-.header-navigation-link-pink:disabled svg path,
-.user-navigation-link-pink:disabled svg path {
+.header-navigation-link-pink:disabled path,
+.user-navigation-link-pink:disabled path {
   fill: #fcfcfc;
 }
 
-.header-search-button-wrapper:focus-within .header-navigation-link svg {
+.header-catalog-link:focus-within svg {
   transform: rotate(0.5turn);
   transition-duration: 0.3s;
 }
 
-.header-search-button-wrapper:focus-within .header-navigation-link svg path {
+.header-search-button-wrapper:focus-within path {
   fill: #fcfcfc;
 }
 
@@ -821,9 +825,9 @@ body {
   background-color: #fcfcfc;
 }
 
-.slider-switch-button:hover svg path,
-.slider-switch-button:active svg path,
-.slider-switch-button:focus-visible svg path {
+.slider-switch-button:hover path,
+.slider-switch-button:active path,
+.slider-switch-button:focus-visible path {
   fill: #2d3440;
 }
 
@@ -1207,8 +1211,8 @@ body {
   background-color: rgba(252, 252, 252, 0.3);
 }
 
-.index-catalog-basket-button:hover svg path,
-.index-catalog-basket-button:active svg path {
+.index-catalog-basket-button:hover path,
+.index-catalog-basket-button:active path {
   fill: #000000;
 }
 
@@ -1225,7 +1229,7 @@ body {
   border-color: #b9b9b9;
 }
 
-.index-catalog-basket-button:disabled svg path {
+.index-catalog-basket-button:disabled path {
   fill: #565c66;
 }
 
@@ -2060,16 +2064,16 @@ body {
   transform: translate(0, -50%);
 }
 
-.control-input:hover ~ .control-mark svg path,
-.control-input:hover ~ .control-mark-checked svg path,
-.control-input:focus ~ .control-mark svg path,
-.control-input:focus ~ .control-mark-checked svg path {
+.control-input:hover ~ .control-mark path,
+.control-input:hover ~ .control-mark-checked path,
+.control-input:focus ~ .control-mark path,
+.control-input:focus ~ .control-mark-checked path {
   fill: #fcfcfc;
   transition-duration: 0.3s;
 }
 
-.control-input:disabled ~ .control-mark svg path,
-.control-input:disabled ~ .control-mark-checked svg path {
+.control-input:disabled ~ .control-mark path,
+.control-input:disabled ~ .control-mark-checked path {
   fill-opacity: 0.5;
 }
 
@@ -2169,13 +2173,13 @@ body {
   transition-duration: 0.3s;
 }
 
-.first-page-link svg path {
+.first-page-link path {
   fill-opacity: 0.3;
 }
 
-.first-page-link:hover svg path,
-.first-page-link:active svg path,
-.first-page-link svg path:focus-visible {
+.first-page-link:hover path,
+.first-page-link:active path,
+.first-page-link path:focus-visible {
   fill-opacity: 1;
   transition-duration: 0.3s;
 }
