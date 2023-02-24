@@ -41,7 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  min-width: 1366px;
+  min-width: 1170px;
 }
 
 .button {
@@ -156,17 +156,14 @@ body {
 
 .pink-body {
   background-color: #feafc3;
-  max-width: 1366px;
 }
 
 .blue-body {
   background-color: #69a9ff;
-  max-width: 1366px;
 }
 
 .yellow-body {
   background-color: #fcc850;
-  max-width: 1366px;
 }
 
 .header-wrapper {
